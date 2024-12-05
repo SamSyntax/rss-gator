@@ -1,0 +1,8 @@
+gooseup:
+	goose -dir sql/schema postgres "postgres://" up
+
+goosedown:
+	goose -dir sql/schema postgres "postgres://" down
+
+build:
+	go build -o ./gator .
