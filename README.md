@@ -33,7 +33,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/gator.git
+   git clone https://github.com/SamSyntax/gator.git
    cd gator
    go mod tidy
    go build -o gator .
