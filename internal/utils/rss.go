@@ -38,7 +38,7 @@ func StartScrape(db *database.Queries, concurrency int, timeBetweenScrape time.D
 	ticker := time.NewTicker(timeBetweenScrape)
 
 	for ; ; <-ticker.C {
-    log.Print("Starting another batch\n")
+		log.Print("Starting another batch\n")
 		feeds, err := db.GetNextFeedsToFetch(context.TODO(), int32(concurrency))
 		if err != nil {
 			log.Printf("Error getting next feeds to fetch %v\n", err)
